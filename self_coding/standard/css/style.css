@@ -314,6 +314,7 @@ a:link, a:visited, a:hover, a:active {
 
 .ranking .ranking-item {
   margin-top: 15px;
+  position: relative;
 }
 
 .ranking .ranking-item a {
@@ -338,22 +339,28 @@ a:link, a:visited, a:hover, a:active {
   vertical-align: top;
   line-height: 1.5;
   font-size: 1.2rem;
+  margin-left: 20px;
 }
 
 .ranking .order {
   display: inline-block;
+  position: absolute;
+  left: 35px;
+  top: -8px;
   width: 18px;
   height: 18px;
   margin: 0 10px;
   border: 1px solid #ccc;
+  border-radius: 50%;
   color: #aaa;
   vertical-align: 20px;
   text-align: center;
   font-weight: bold;
   line-height: 16px;
-  -webkit-transform: rotate(45deg);
+  /* -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(45deg); */
+  background-color: #fff;
 }
 
 .ranking .ranking-item:nth-of-type(1) .order,
@@ -382,9 +389,9 @@ a:link, a:visited, a:hover, a:active {
   counter-increment: ranking;
   display: inline-block;
   font-size: 1.0rem;
-  -webkit-transform: rotate(-45deg);
+  /* -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); */
 }
 
 .documents {
